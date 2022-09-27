@@ -1,0 +1,55 @@
+index:
+  x_coord: 0.0542 
+
+  x_top: 0.1188
+  x_bottom: 0.0417
+
+  y_coord: 0.0532
+
+  z_top: 0.1061
+  z_bottom: -0.041
+
+middle: 
+  x_coord: 0.0542 
+  
+  x_top: 0.1188
+  x_bottom: 0.0417
+
+  y_coord: 0
+
+  z_top: 0.1204
+  z_bottom: -0.044
+
+ring:
+  x_coord: 0.0542 
+
+  x_top: 0.1188
+  x_bottom: 0.0417
+
+  y_left: -0.0791
+  y_right: -0.0141
+
+  z_top: 0.1153
+  z_bottom: -0.0386
+
+thumb:
+  x_coord: 0.0542
+
+  x_top: 0.129
+  x_bottom: 0.0367
+
+  yz_top_right: 
+    - 0.1126
+    - -0.0217
+
+  yz_bottom_right: 
+    - 0.0752
+    - -0.1037
+
+  yz_bottom_left: 
+    - -0.052
+    - -0.0886
+    
+  yz_top_left: 
+    - -0.0372
+    - -0.0213

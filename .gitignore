@@ -1,0 +1,34 @@
+# VS Code
+.vscode
+
+# Installation packages
+holo_dex.egg-info
+
+# Pycache files
+*__pycache__*
+
+# Calibration files
+calibration_files/*
+
+# Videos
+videos/*
+
+# Model weights
+model_weights/*
+
+# Run images
+deploy_runs/*
+
+# Jupyter notebooks
+notebooks/*
+
+# Train logs and outputs
+outputs/*
+*outputs/*
+*logs/*
+*wandb/*
+
+# Data
+recorded_data/*
+filtered_data/*
+extracted_data/*

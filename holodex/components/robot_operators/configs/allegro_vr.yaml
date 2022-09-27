@@ -1,0 +1,43 @@
+thumb:
+  x_coord: 0.054
+
+  index_x_top: 0.117
+  index_x_bottom: 0.0169
+
+  middle_x_top: 0.117
+  middle_x_bottom: 0.054
+
+  ring_x_top: 0.117
+  ring_x_bottom: 0.0518
+  
+  bottom_right:
+    - 0.1321
+    - -0.0481
+
+  top_right:
+    - 0.1154
+    - -0.0051
+
+  index_top:
+    - 0.0495
+    - 0.0106
+
+  index_bottom:
+    - 0.0413
+    - -0.1017
+
+  middle_top:
+    - 0.0094
+    - 0.0124
+    
+  middle_bottom:
+    -  0.0079
+    - -0.0997
+
+  ring_top:
+    - -0.024
+    - -0.0087
+
+  ring_bottom:
+    - -0.0373
+    - -0.0961

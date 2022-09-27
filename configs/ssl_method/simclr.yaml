@@ -1,0 +1,12 @@
+name: SimCLR
+
+project_name: simclr-pretraining
+
+color_jitter_const: 1
+temperature: 0.1
+
+projector:
+  # Input size is the encoder's output size
+  output_size: 8192
+  hidden_sizes: [8192]
+  enable_batchnorm: true

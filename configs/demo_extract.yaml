@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+  - image_parameters: planar_rotation # Used just for crop sizes
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+
+# Data to extract from the pickle files
+ssl_data: false
+sample: true
+color_images: true
+depth_images: true
+states: true
+actions: true
+
+# data paths
+storage_path: 'recorded_data/'
+filter_path: 'filtered_data/'
+target_path: 'extracted_data/'
+
+# Number of view images 
+num_cams: 3
+
+# Delta for extracting states
+min_action_distance: 2 # cm

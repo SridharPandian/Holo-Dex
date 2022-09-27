@@ -1,0 +1,10 @@
+name: ResNet34 RGB Encoder
+
+settings:
+  _target_: holodex.utils.models.load_encoder
+  encoder_type: 'resnet34'
+  input_channels: 3 
+  weights_path: ${encoder_weights_path}
+  pretrained: true
+
+output_size: 512

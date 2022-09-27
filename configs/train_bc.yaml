@@ -1,0 +1,52 @@
+defaults:
+  - _self_
+  - encoder: resnet18
+  - dataset: planar_rotation/clipped_trajectory
+  - image_parameters: planar_rotation
+
+data_path: extracted_data/
+
+encoder_gradient: false # True for full BC and false for BC Rep
+
+# Datset settings
+image_type: color
+absolute_actions: true
+selected_view: 1
+
+# Encoder weight initialization
+encoder_weights_path: null
+
+# Predictor
+predictor:
+  input_dim: ${encoder.output_size}
+  output_dim: 12
+  hidden_dims: [1024, 2024, 512, 512]
+  use_batchnorm: true
+  dropout: null
+
+# Training settings
+device: 0
+epochs: 1
+num_workers: 12
+train_test_split: true
+
+# Hyperparameters
+lr: 2e-4 
+seed: 42
+batch_size: 1024
+momentum: 0.9
+weight_decay: 1e-6
+action_scaling_factor: 1e3
+
+optimizer: Adam
+
+# Logging
+log_path: training_logs
+project_name: behavior-cloning
+wandb: true
+tb: true
+
+# Checkpointing
+run_name: Behavior Cloning - ${encoder.name} - View ${selected_view} - ${dataset.name}
+checkpoint_path: model_weights/${run_name}
+checkpoint_interval: 10

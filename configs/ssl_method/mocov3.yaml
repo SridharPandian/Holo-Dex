@@ -1,0 +1,18 @@
+name: MoCo
+
+project_name: moco-pretraining
+
+momentum: 0.9
+temperature: 0.1
+
+expander:
+  # Input size is the encoder's output size
+  output_size: 8192
+  hidden_sizes: [8192]
+  enable_batchnorm: true
+
+projector:
+  # Input size is the expander's output size
+  output_size: 8192
+  hidden_sizes: [8192]
+  enable_batchnorm: true

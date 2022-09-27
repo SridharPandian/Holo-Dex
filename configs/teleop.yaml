@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - robot_camera
+  - tracker: oculus
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+
+finger_configs:
+  freeze_index: false # Keep index finger fixed at [0, 0, 0, 0]
+  freeze_middle: false # Keep middle finger fixed at [0, 0, 0, 0]
+  three_dim: true
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .

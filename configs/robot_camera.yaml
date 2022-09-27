@@ -1,0 +1,10 @@
+robot_cam_serial_numbers:
+  - "023322061741"
+  - "021422062804"
+  - "023322062082"
+
+# Robot camera stream resolution
+resolution: [1280, 720]
+
+# Visualize image streams
+visualize_stream: false

@@ -1,0 +1,30 @@
+defaults:
+  - _self_
+  - /dataset: object_flipping/filtered
+  - /encoder: resnet18
+  - /image_parameters: object_flipping
+
+arm_position: flat
+selected_view: 1
+
+run_store_path: deploy_runs/object_flipping/${model}
+
+vinn:
+  min_action_distance: 0.005
+
+  data_path: ${task.dataset.dataset_path}
+  demos_list: ${task.dataset.complete_demos}
+
+  nn_buffer_limit: 10
+
+  encoder_weights_path: model_weights/BYOL - ${encoder.name} - View ${selected_view} - Object Flipping SSL/BYOL - ${encoder.name} - View ${selected_view} - Object Flipping SSL_best.pt
+  absolute_actions: ${absolute_actions}
+
+bc:
+  predictor:
+    input_dim: 512
+    output_dim: 12
+    hidden_dims: [1024, 2024, 512, 512] 
+    use_batchnorm: true
+
+  model_weights: model_weights/Behavior Cloning - ${encoder.name} - View ${selected_view} - Object Flipping Filtered/Behavior Cloning - ${encoder.name} - View ${selected_view} - Object Flipping Filtered_best.pt

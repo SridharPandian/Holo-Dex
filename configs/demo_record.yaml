@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+
+# Recorded Demostration Number
+demo_num: 0
+
+# data paths
+storage_path: 'recorded_data/'
+
+# Number of view images 
+num_cams: 3
+
+# State Offset
+offset: 0

@@ -1,0 +1,30 @@
+defaults:
+  - _self_
+  - /dataset: postit_note_sliding/filtered
+  - /encoder: resnet18
+  - /image_parameters: postit_note_sliding
+
+arm_position: slide
+selected_view: 3
+
+run_store_path: deploy_runs/postit_note_sliding/${model}
+
+vinn:
+  min_action_distance: 0.02
+
+  data_path: ${task.dataset.dataset_path}
+  demos_list: ${task.dataset.complete_demos}
+
+  nn_buffer_limit: 10
+
+  encoder_weights_path: model_weights/BYOL - ${encoder.name} - View ${selected_view} - Postit Note Sliding SSL/BYOL - ${encoder.name} - View ${selected_view} - Postit Note Sliding SSL_best.pt
+  absolute_actions: ${absolute_actions}
+
+bc:
+  predictor:
+    input_dim: 512
+    output_dim: 12
+    hidden_dims: [1024, 2024, 512, 512] 
+    use_batchnorm: true
+
+  model_weights: model_weights/Behavior Cloning - ${encoder.name} - View ${selected_view} - Postit Note Sliding Filtered/Behavior Cloning - ${encoder.name} - View ${selected_view} - Postit Note Sliding Filtered_best.pt

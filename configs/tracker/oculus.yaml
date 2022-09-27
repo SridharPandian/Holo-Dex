@@ -1,0 +1,20 @@
+type: VR
+
+# Host address
+host: 172.24.71.211
+keypoint_stream_port: 8087
+
+# Streaming robot camera
+stream_robot_cam: true
+stream_camera_num: 1
+stream_camera_rotation_angle: 180
+robot_cam_stream_port: 10005
+
+# Streaming Ports
+plot_stream_port: 15001
+
+# Visualize 3D and 2D plots
+visualize_right_graphs: true
+
+# Visualize left hand direction
+visualize_left_graphs: false

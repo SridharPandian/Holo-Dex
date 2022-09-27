@@ -1,0 +1,17 @@
+type: MP
+
+# Realsense camera serial number
+cam_serial_num: "138422075648"
+
+# Camera resolution
+resolution: [1280, 720]
+
+# Moving average coefficient
+alpha: 0.8
+
+# Visualize 3D and 2D plots
+visualize_graphs: true
+
+# Visualize Predicted camera stream
+visualize_pred_stream: true
+pred_stream_rotation_angle: 180

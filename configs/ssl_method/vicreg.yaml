@@ -1,0 +1,13 @@
+name: VICReg
+
+project_name: vicreg-pretraining
+
+projector:
+  # Input size is the encoder's output size
+  output_size: 8192
+  hidden_sizes: [8192]
+  enable_batchnorm: true
+
+sim_coef: 25
+std_coef: 25
+cov_coef: 1

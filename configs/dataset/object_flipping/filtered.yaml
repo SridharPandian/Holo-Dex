@@ -1,0 +1,30 @@
+name: Object Flipping Filtered
+
+dataset_path: ${data_path}/JEPA/filtered
+
+complete_demos:
+  - demonstration_77
+  - demonstration_78
+  - demonstration_79
+  - demonstration_80
+  - demonstration_81
+  - demonstration_82
+  - demonstration_83
+  - demonstration_84
+  - demonstration_85
+  - demonstration_86
+
+train_demos:
+  - demonstration_77
+  - demonstration_78
+  - demonstration_79
+  - demonstration_81
+  - demonstration_82
+  - demonstration_83
+  - demonstration_84
+  - demonstration_85
+  - demonstration_86
+
+test_demos:
+  - demonstration_80
+  - demonstration_83

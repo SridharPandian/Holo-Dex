@@ -1,0 +1,19 @@
+name: Bottle Opening SSL
+
+dataset_path: ${data_path}/demonstrations/ssl
+
+complete_demos:
+  - demonstration_274
+  - demonstration_275
+  - demonstration_276
+  - demonstration_277
+  - demonstration_278
+
+train_demos:
+  - demonstration_274
+  - demonstration_275
+  - demonstration_276
+  - demonstration_277
+
+test_demos:
+  - demonstration_278

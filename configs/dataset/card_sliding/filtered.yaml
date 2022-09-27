@@ -1,0 +1,69 @@
+name: Card Sliding Filtered
+
+dataset_path: ${data_path}/demonstrations/filtered
+
+complete_demos:
+  - demonstration_152 
+  - demonstration_154
+  - demonstration_155
+  - demonstration_156
+  - demonstration_159
+  - demonstration_160
+  - demonstration_163
+  - demonstration_164
+  - demonstration_167
+  - demonstration_168
+  - demonstration_170
+  - demonstration_172
+  - demonstration_173
+  - demonstration_174
+  - demonstration_176
+  - demonstration_177
+  - demonstration_179 
+  - demonstration_182
+  - demonstration_183
+  - demonstration_184
+  - demonstration_185
+  - demonstration_189
+  - demonstration_190
+  - demonstration_193 
+  - demonstration_198
+  - demonstration_202
+  - demonstration_204
+  - demonstration_205
+  - demonstration_208
+  - demonstration_209
+
+train_demos:
+  - demonstration_152 
+  - demonstration_154
+  - demonstration_155
+  - demonstration_156
+  - demonstration_159
+  - demonstration_160
+  - demonstration_163
+  - demonstration_164
+  - demonstration_167
+  - demonstration_168
+  - demonstration_170
+  - demonstration_172
+  - demonstration_176
+  - demonstration_177
+  - demonstration_179 
+  - demonstration_182
+  - demonstration_183
+  - demonstration_184
+  - demonstration_185
+  - demonstration_189
+  - demonstration_193 
+  - demonstration_198
+  - demonstration_202
+  - demonstration_204
+  - demonstration_205
+  - demonstration_208
+  - demonstration_209
+
+test_demos:
+  - demonstration_173
+  - demonstration_174
+  - demonstration_190

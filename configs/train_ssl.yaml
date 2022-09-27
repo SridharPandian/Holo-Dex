@@ -1,0 +1,41 @@
+defaults:
+  - _self_
+  - ssl_method: byol
+  - encoder: resnet18
+  - dataset: planar_rotation/ssl
+  - image_parameters: planar_rotation
+
+# Directory settings
+data_path: extracted_data/
+
+# Encoder initialization
+encoder_weights_path: null
+
+# Data configs
+image_type: color
+selected_view: 1
+
+# Training Settings
+device: 0
+epochs: 1
+num_workers: 12
+
+# Hyperparameters
+lr: 2e-1
+seed: 42
+batch_size: 512
+momentum: 0.9
+weight_decay: 1.5e-6
+
+optimizer: LARS
+
+# Logging
+log_path: training_logs
+project_name: ${ssl_method.project_name}
+wandb: false
+tb: false
+
+# Checkpointing
+run_name: ${ssl_method.name} - ${encoder.name} - View ${selected_view} - ${dataset.name}
+checkpoint_path: model_weights/${run_name}
+checkpoint_interval: 10

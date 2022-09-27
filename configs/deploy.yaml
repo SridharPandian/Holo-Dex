@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - robot_camera
+  - task: planar_rotation
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled  
+
+model: VINN
+absolute_actions: true
+
+data_path: extracted_data/
+
+run_loop: false
+loop_frequency: 1 # 1 move per second

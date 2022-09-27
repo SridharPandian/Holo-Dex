@@ -1,0 +1,79 @@
+name: Planar Rotation SSL
+
+dataset_path: ${data_path}/ssl
+
+complete_demos:
+  - demonstration_5
+  - demonstration_6
+  - demonstration_7
+  - demonstration_8
+  - demonstration_9
+  - demonstration_10
+  - demonstration_11
+  - demonstration_12
+  - demonstration_15
+  - demonstration_16
+  - demonstration_17
+  - demonstration_20
+  - demonstration_21
+  - demonstration_22
+  - demonstration_56
+  - demonstration_57
+  - demonstration_58
+  - demonstration_59
+  - demonstration_60
+  - demonstration_61
+  - demonstration_62
+  - demonstration_63
+  - demonstration_64
+  - demonstration_65
+  - demonstration_66
+  - demonstration_67
+  - demonstration_68
+  - demonstration_69
+  - demonstration_70
+  - demonstration_71
+  - demonstration_72
+  - demonstration_73
+  - demonstration_74
+  - demonstration_75
+  - demonstration_76
+
+train_demos:
+  - demonstration_5
+  - demonstration_6
+  - demonstration_7
+  - demonstration_8
+  - demonstration_9
+  - demonstration_10
+  - demonstration_11
+  - demonstration_12
+  - demonstration_15
+  - demonstration_16
+  - demonstration_17
+  - demonstration_56
+  - demonstration_57
+  - demonstration_58
+  - demonstration_59
+  - demonstration_60
+  - demonstration_61
+  - demonstration_62
+  - demonstration_63
+  - demonstration_64
+  - demonstration_65
+  - demonstration_66
+  - demonstration_69
+  - demonstration_70
+  - demonstration_71
+  - demonstration_72
+  - demonstration_73
+  - demonstration_74
+  - demonstration_75
+  - demonstration_76
+
+test_demos:
+  - demonstration_20
+  - demonstration_21
+  - demonstration_22
+  - demonstration_67
+  - demonstration_68
