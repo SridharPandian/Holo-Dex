@@ -30,7 +30,6 @@ class DexArmDeploy(object):
         # Model initialization
         if model == 'VINN':
             print('Initializing the VINN deployment module...')
-            # TODO - Redo
             self.model = DeployVINN(
                 encoder_configs = self.configs['task']['encoder'],
                 encoder_weights_path = self.configs['task']['vinn']['encoder_weights_path'],
@@ -46,7 +45,6 @@ class DexArmDeploy(object):
 
         elif model == 'BC':
             print('Initializing the BC deployment module...')
-            # TODO - Redo
             self.model = DeployBC(
                 encoder_configs = self.configs['task']['encoder'],
                 predictor_configs = self.configs['task']['bc']['predictor'],

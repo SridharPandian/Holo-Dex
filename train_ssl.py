@@ -56,8 +56,8 @@ class Workspace(object):
 
         if self.ssl_method == 'BYOL':
             augmentation_function = get_augment_function(
-                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view], 
-                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view]
+                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view - 1], 
+                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view - 1]
             )
 
             self.learner = BYOL(
@@ -76,8 +76,8 @@ class Workspace(object):
             )
 
             augmentation_function = get_augment_function(
-                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view], 
-                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view]
+                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view - 1], 
+                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view - 1]
             )
 
             self.learner = VICReg(
@@ -92,8 +92,8 @@ class Workspace(object):
         elif self.ssl_method == 'SimCLR':
             augmentation_function = get_simclr_augmentation(
                 color_jitter_const = self.configs.ssl_method.color_jitter_const,
-                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view], 
-                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view]
+                mean_tensor = self.configs.image_parameters.mean_tensors[self.configs.selected_view - 1], 
+                std_tensor = self.configs.image_parameters.std_tensors[self.configs.selected_view - 1]
             )
 
             projector = create_fc(
