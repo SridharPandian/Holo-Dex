@@ -4,7 +4,7 @@ defaults:
   - override hydra/job_logging: disabled  
 
 # Recorded Demostration Number
-demo_num: 0
+demo_num: 1
 
 # data paths
 storage_path: 'recorded_data/'
