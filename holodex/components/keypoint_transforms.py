@@ -8,7 +8,7 @@ from holodex.constants import *
 
 
 class TransformHandCoords(object):
-    def __init__(self, detector_type, moving_average_limit = 5):
+    def __init__(self, detector_type, moving_average_limit = 1):
         # Initializing the ROS node
         try:
             rospy.init_node('hand_transformation_coords_{}'.format(detector_type))

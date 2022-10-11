@@ -22,7 +22,7 @@ jointwise_angle_bounds:
   - 0.2
 
 # Moving average time steps
-time_steps: 3
+time_steps: 1
 
 # Angle scaling factors
 linear_scaling_factors: [1.1, 1.1, 1.1]
