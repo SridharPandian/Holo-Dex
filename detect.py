@@ -1,4 +1,3 @@
-
 import time
 import hydra
 from processes import get_detector_processes
