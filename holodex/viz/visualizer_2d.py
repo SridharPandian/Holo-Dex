@@ -40,7 +40,7 @@ class Hand2DVisualizer(object):
         
         else:
             raise NotImplementedError("There are no other detectors available. \
-            The only options are mediapipe or Mediapipe or Oculus!")
+            The only options are Mediapipe or Oculus!")
 
     def _callback_keypoints(self, keypoints):
         self.keypoints = np.array(keypoints.data).reshape(self.num_keypoints, 3)

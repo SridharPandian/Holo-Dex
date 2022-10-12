@@ -5,10 +5,7 @@ from holodex.constants import *
 class OculusVRHandDetector(object):
     def __init__(self, HOST, PORT):
         # Initializing the ROS Node
-        try:
-            rospy.init_node('oculus_keypoint_extractor')
-        except:
-            pass
+        rospy.init_node('oculus_keypoint_extractor')
 
         # Initializing the network socket
         self.socket = create_pull_socket(HOST, PORT)

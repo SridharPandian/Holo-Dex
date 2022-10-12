@@ -34,7 +34,7 @@ class Hand3DVisualizer(object):
             )
         else:
             raise NotImplementedError("There are no other detectors available. \
-            The only options are mediapipe or Mediapipe or Oculus!")
+            The only options are Mediapipe or Oculus!")
 
         # Initializing the plotting object
         self.plotter3D = Plot3DRightHand(detector_type = detector_type)

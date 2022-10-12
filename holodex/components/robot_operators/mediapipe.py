@@ -11,10 +11,7 @@ from copy import deepcopy as copy
 class MPDexArmTeleOp(object):
     def __init__(self):
         # Initializing the ROS Node
-        try:
-            rospy.init_node("mp_dexarm_teleop")
-        except:
-            pass
+        rospy.init_node("mp_dexarm_teleop")
 
         # Storing the transformed hand coordinates
         self.hand_coords = None

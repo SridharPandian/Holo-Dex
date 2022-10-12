@@ -6,10 +6,7 @@ from holodex.constants import KINOVA_JOINT_STATE_TOPIC, KINOVA_POSITIONS
 
 class KinovaArm(object):
     def __init__(self):
-        try:
-            rospy.init_node('holodex_kinova_arm_controller')
-        except:
-            pass
+        rospy.init_node('holodex_kinova_arm_controller')
 
         self.robot = KinovaController()
 

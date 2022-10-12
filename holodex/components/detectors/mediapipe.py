@@ -9,10 +9,7 @@ from mediapipe import solutions as mp_solutions
 class MPHandDetector(object):
     def __init__(self, cam_serial_num, resolution, alpha):
         # Initializing the ROS node
-        try:
-            rospy.init_node("mediapipe_keypoint_extractor")
-        except:
-            pass
+        rospy.init_node("mediapipe_keypoint_extractor")
 
         # Disabling scientific notations
         np.set_printoptions(suppress=True)

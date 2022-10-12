@@ -1,6 +1,6 @@
 name: Planar Rotation SSL
 
-dataset_path: ${data_path}/ssl
+dataset_path: ${data_path}/demonstrations/ssl
 
 complete_demos:
   - demonstration_5

@@ -10,10 +10,7 @@ from holodex.constants import *
 class TransformHandCoords(object):
     def __init__(self, detector_type, moving_average_limit = 1):
         # Initializing the ROS node
-        try:
-            rospy.init_node('hand_transformation_coords_{}'.format(detector_type))
-        except:
-            pass
+        rospy.init_node('hand_transformation_coords_{}'.format(detector_type))
 
         self.detector_type = detector_type
 
@@ -40,7 +37,7 @@ class TransformHandCoords(object):
         
         else:
             raise NotImplementedError("There are no other detectors available. \
-            The only options are mediapipe or Mediapipe or Oculus!")
+            The only options are Mediapipe or Oculus!")
 
         # Setting the frequency to 30 Hz
         if detector_type == 'MP':

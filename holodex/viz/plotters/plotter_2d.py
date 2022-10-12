@@ -159,7 +159,7 @@ class Plot2DOculusHand(object):
         # Plotting
         plt.plot()
 
-        # Resetting and Pausing the 3D plot
+        # Resetting and pausing the 3D plot
         self.fig.canvas.flush_events()
         plt.pause(0.01)
         plt.cla()

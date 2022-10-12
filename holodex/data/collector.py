@@ -15,10 +15,7 @@ class DataCollector(object):
         num_cams,
         storage_path
     ):
-        try:
-            rospy.init_node('data_extractor', disable_signals = True)
-        except:
-            pass
+        rospy.init_node('data_extractor', disable_signals = True)
 
         self.storage_path = storage_path
 

@@ -8,10 +8,7 @@ from holodex.constants import *
 
 class RobotCameraStreamer(object):
     def __init__(self, robot_camera_num, host, port, rotation_angle = 0):
-        try:
-            rospy.init_node('robot_cam_stream_server_{}'.format(robot_camera_num))
-        except:
-            pass
+        rospy.init_node('robot_cam_stream_server_{}'.format(robot_camera_num))
 
         self.socket = create_push_socket(host, port)
 

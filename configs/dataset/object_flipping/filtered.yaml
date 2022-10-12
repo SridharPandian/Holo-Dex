@@ -1,6 +1,6 @@
 name: Object Flipping Filtered
 
-dataset_path: ${data_path}/JEPA/filtered
+dataset_path: ${data_path}/demonstrations/filtered
 
 complete_demos:
   - demonstration_77

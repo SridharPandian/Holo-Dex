@@ -9,10 +9,7 @@ from copy import deepcopy as copy
 
 class AllegroHand(object):
     def __init__(self):
-        try:
-            rospy.init_node('holodex_allegro_hand_controller')
-        except:
-            pass
+        rospy.init_node('holodex_allegro_hand_controller')
 
         self.kdl_solver = AllegroKDL()
         self.controller = DexArmControl()

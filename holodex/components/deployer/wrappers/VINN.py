@@ -92,27 +92,12 @@ class DeployVINN(object):
         
         # Appending the item in the buffer and choosing the idx
         choosen_idx = self.buffer.choose(nn_idxs)
-        choosen_nn_idx, action = nn_idxs[choosen_idx].item(), nn_actions[choosen_idx]
+        choosen_nn_idx, applied_action = nn_idxs[choosen_idx].item(), nn_actions[choosen_idx]
 
         # Getting the NN idx for visualization
         nn_traj_idx, nn_traj_image_idx = get_traj_state_idxs(choosen_nn_idx, self.traj_idx, self.cumm_len)
         input_nn_image_path = self.input_image_paths[nn_traj_idx][nn_traj_image_idx] 
         output_nn_image_path = self.output_image_paths[nn_traj_idx][nn_traj_image_idx]
-
-        # Computing the L2 distance to see if it is above the min action distance
-        applied_action = copy(action)
-        l2_distance = np.linalg.norm(action.numpy() - np.array(input_dict['joint_state'])) # Bug for relative actions
-        traj_limit = self.cumm_len[nn_traj_idx + 1] - 1
-
-        # Moving to state S_t+2 instead of S_t+1 since dist(S_t+1, S_curr) < min_action_distance
-        while l2_distance < self.min_action_distance and choosen_nn_idx < traj_limit:
-            choosen_nn_idx += 1
-            applied_action = self._actions[choosen_nn_idx]
-
-            nn_traj_image_idx += 1
-            output_nn_image_path = self.output_image_paths[nn_traj_idx][nn_traj_image_idx]
-
-            l2_distance = np.linalg.norm(action.numpy() - np.array(input_dict['joint_state']))
 
         return applied_action, input_nn_image_path, output_nn_image_path
 

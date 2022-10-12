@@ -33,7 +33,7 @@ def vicreg_loss(input_rep, output_rep, feature_size, sim_coef, std_coef, cov_coe
 
     return final_loss, loss_dict
 
-# From lucidrains SimCLR implementation
+# From sthalles SimCLR implementation: https://github.com/sthalles/SimCLR
 def nt_xent_loss(queries, keys, temperature = 0.1):
     b, device = queries.shape[0], queries.device
 

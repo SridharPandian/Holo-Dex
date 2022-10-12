@@ -10,10 +10,7 @@ from copy import deepcopy as copy
 class VRDexArmTeleOp(object):
     def __init__(self):
         # Initializing the ROS Node
-        try:
-            rospy.init_node("vr_dexarm_teleop")
-        except:
-            pass
+        rospy.init_node("vr_dexarm_teleop")
 
         # Storing the transformed hand coordinates
         self.hand_coords = None

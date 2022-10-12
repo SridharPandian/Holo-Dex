@@ -10,10 +10,7 @@ from holodex.constants import *
 class RealSenseRobotStream(object):
     def __init__(self, cam_serial_num, robot_cam_num, rotation_angle = 0):
         # Initializing ROS Node
-        try:
-            rospy.init_node('robot_cam_{}_stream'.format(robot_cam_num))
-        except:
-            pass
+        rospy.init_node('robot_cam_{}_stream'.format(robot_cam_num))
 
         # Disabling scientific notations
         np.set_printoptions(suppress=True)
