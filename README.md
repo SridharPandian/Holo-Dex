@@ -6,15 +6,15 @@ This repository contains the official implementation of [Holo-Dex](holo-dex.gith
 
 ## Robot Runs
 <p align="center">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/planar-rotation.gif">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/object-flipping.gif">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/can-spinning.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/planar-rotation.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/object-flipping.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/can-spinning.gif">
  </p>
 
  <p align="center">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/bottle-opening.gif">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/card-sliding.gif">
-  <img width="33%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/postit-note-sliding.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/bottle-opening.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/card-sliding.gif">
+  <img width="30%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/main_task/postit-note-sliding.gif">
  </p>
 
  ## Method
@@ -38,7 +38,7 @@ On the robot server side, start the [controllers](https://github.com/NYU-robot-l
 ```
 python teleop.py
 ```
-The Holo-Dex teleop configurations can be adjusted in `configs/tracker/oculus.yaml`.
+The Holo-Dex teleop configurations can be adjusted in `configs/tracker/oculus.yaml`. The robot camera configurations can be adjusted in `configs/robot_camera.yaml`.
 
 The package also contains an 30 Hz teleop implementation of [DIME](https://arxiv.org/abs/2203.13251) and you can run it using the following command:
 ```
@@ -62,7 +62,7 @@ You can change the data extraction configurations in `configs/demo_extract.yaml`
 ## Training Neural Networks
 You can train encoders using Self-Supervised methods such as [BYOL](https://arxiv.org/abs/2006.07733), [VICReg](https://arxiv.org/abs/2105.04906), [SimCLR](https://arxiv.org/abs/2002.05709) and [MoCo](https://arxiv.org/abs/2104.02057). Use the following command to train a resnet encoder using the above mentioned SSL methods:
 ```
-python train_ssl.py ssl_method=<byol|vicreg|simclr|moco>
+python train_ssl.py ssl_method=<byol|vicreg|simclr|mocov3>
 ```
 The training configurations can be changed in `configs/train_ssl.yaml`. 
 
