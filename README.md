@@ -101,7 +101,7 @@ python deploy.py model=<BC|VINN> run_loop=true loop_frequency=<action_loop_frequ
 ```
 
 ## Customizing the VR Application
-To use Holo-Dex's VR side source code `vr/Holo-Dex`, you need to install Unity along with other dependencies which can be download through Nuget:
+To use Holo-Dex's VR side source code `vr/Holo-Dex`, you need to install Unity along with other dependencies which can be downloaded through Nuget:
 - Oculus SDK
 - NetMQ
 - TextMeshPro
