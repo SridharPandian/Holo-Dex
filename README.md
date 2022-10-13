@@ -2,7 +2,7 @@
 
 **Authors**: [Sridhar Pandian Arunachalam](https://sridharpandian.github.io), [Irmak Guzey](https://www.linkedin.com/in/irmak-guzey-6a9010175/), [Soumith Chintala](https://soumith.ch/), [Lerrel Pinto](https://lerrelpinto.com)
 
-This repository contains the official implementation of [Holo-Dex](holo-dex.github.io) including the unity scripts for the VR application, robot demonstration collection pipeline, training scripts and deployment modules. The VR application's APK can be found [here](https://github.com/SridharPandian/Holo-Dex/releases/tag/VR).
+This repository contains the official implementation of [Holo-Dex](https://arxiv.org/abs/2210.06463) including the unity scripts for the VR application, robot demonstration collection pipeline, training scripts and deployment modules. The VR application's APK can be found [here](https://github.com/SridharPandian/Holo-Dex/releases/tag/VR).
 
 ## Robot Runs
 <p align="center">
@@ -53,7 +53,7 @@ python teleop.py tracker=mediapipe tracker/cam_serial_num=<realsense_camera_seri
 ``` 
 
 ## Data
-All our data can be found in this URL: [https://drive.google.com/](https://drive.google.com/)
+All our data can be found in this URL: [https://drive.google.com/drive/folders/1PiuqYkG7O1sIxE7YewVkni6ohLuNY7vF?usp=sharing](https://drive.google.com/drive/folders/1PiuqYkG7O1sIxE7YewVkni6ohLuNY7vF?usp=sharing)
 
 To collect demonstrations using this framework, run the following command:
 ```
