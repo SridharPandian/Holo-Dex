@@ -31,10 +31,17 @@ pip install -e .
 
 You can test if it has installed correctly by running `import holodex` from a python shell.
 
-## Running the teleop
-To use the Holo-Dex teleop module, open the VR Application in your Oculus Headset and enter the robot server's IP address (should be in the same network). Green Stream border indicates that the right hand keypoints are being streamed and blue indicates left. Red indicates that the stream is paused and the menu can be accessed only when paused.
+Install the VR Application in your Oculus Headset using the APK provided [here](https://github.com/SridharPandian/Holo-Dex/releases/tag/VR). To setup the VR Application in your Oculus Headset and enter the robot server's IP address (should be in the same network). The following stream border color codes indicate the following:
+- Green - the right hand keypoints are being streamed
+- Blue - the left hand keypoints are being stream. 
+- Red - the stream is paused and gives access to the menu.
 
-On the robot server side, start the [controllers](https://github.com/NYU-robot-learning/DIME-Controllers) first followed by the following command to start the teleop:
+<p align="center">
+  <img width="70%" src="https://github.com/holo-dex/holo-dex.github.io/blob/website/mfiles/color-code-indicator.gif">
+</p>
+
+## Running the teleop
+To use the Holo-Dex teleop module, open the VR Application in your Oculus Headset. On the robot server side, start the [controllers](https://github.com/NYU-robot-learning/DIME-Controllers) first followed by the following command to start the teleop:
 ```
 python teleop.py
 ```
@@ -103,9 +110,9 @@ To use Holo-Dex's VR side source code `vr/Holo-Dex`, you need to install Unity a
 
 If you use this repo in your research, please consider citing the paper as follows:
 ```
-@article{arunachalam2022dime,
+@article{arunachalam2022holodex,
   title={Holo-Dex: Teaching Dexterity with Immersive Mixed Reality},
   author={Sridhar Pandian Arunachalam and Irmak Guzey and Soumith Chintala and Lerrel Pinto},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2210.06463},
   year={2022}
 }

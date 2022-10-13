@@ -9,8 +9,6 @@ from copy import deepcopy as copy
 
 class AllegroHand(object):
     def __init__(self):
-        rospy.init_node('holodex_allegro_hand_controller')
-
         self.kdl_solver = AllegroKDL()
         self.controller = DexArmControl()
         self.joint_limit_config = get_yaml_data(get_path_in_package("robot/configs/allegro_link_info.yaml"))['links_info']
