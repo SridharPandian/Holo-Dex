@@ -1,6 +1,6 @@
 # Holo-Dex: Teaching Dexterity with Immersive Mixed Reality
 
-**Authors**: [Sridhar Pandian Arunachalam](https://sridharpandian.github.io), [Irmak Guzey](https://www.linkedin.com/in/irmak-guzey-6a9010175/), [Soumith Chintala](https://soumith.ch/), [Lerrel Pinto](https://lerrelpinto.com)
+**Authors**: [Sridhar Pandian Arunachalam](https://sridharpandian.github.io), [Irmak Guzey](https://irmakguzey.github.io/), [Soumith Chintala](https://soumith.ch/), [Lerrel Pinto](https://lerrelpinto.com)
 
 This repository contains the official implementation of [Holo-Dex](https://arxiv.org/abs/2210.06463) including the unity scripts for the VR application, robot demonstration collection pipeline, training scripts and deployment modules. The VR application's APK can be found [here](https://github.com/SridharPandian/Holo-Dex/releases/tag/VR).
 
